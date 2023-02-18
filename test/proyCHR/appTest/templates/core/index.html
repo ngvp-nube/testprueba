@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio meraya</title>
+    <link rel="stylesheet" href="{% static 'CSS/estilo.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <input type="checkbox" name="" id="menu_bar">
+            <label for="menu_bar">Radio Meraya</label>
+            <nav class="menu">
+                <a href="">Home</a>
+                <a href="">Galeria</a>
+                <a href="">Formulario</a>
+                <a href="">Quienes Somos</a>
+            </nav>
+        </div>
+        
+    
+    </header>
+
+    <main>
+        <section id="banner">
+            <img src="{% static 'IMG/R.jpg' %}" alt="">
+            <div class="contenedor">
+                <h1>Radio Meraya para todo el mundo</h1>
+                <p>Escucha la mejor musica y transmisiones</p>
+            </div>
+        </section>
+        <section id="bienvenida">
+            <h1>Bienvenidos</h1>
+            <p>Somos una radio comunitaria que transmite para toda la gente</p>
+        </section>
+        <section id="blog">
+            <h3>Ultimas reproducciones</h3>
+            <div class="contenedor">
+                <article>
+                    <img src="{% static 'IMG/R.jpg' %}" alt="">
+                    <h5>music</h5>
+                </article>
+                <article>
+                    <img src="{% static 'IMG/R.jpg' %}" alt="">
+                    <h5>Musica</h5>
+                </article>
+                <article>
+                    <img src="{% static 'IMG/R.jpg' %}" alt="">
+                    <h5>Musica</h5>
+                </article>
+            </div>
+             <h3>vista con html y css data cargada al combo box</h3>
+            <select name="pets" id="pet-select" heigth="600px" >
+                {{% for item in lista_nombre %}
+        
+                <option> {{item.name}}</option>
+                
+                {% endfor %}}
+            </select>
+        </section>
+        <section id="info">
+            <h3>lo mejor de nuestra radio</h3>
+            <div class="contenedor">
+                <div class="informacion-perro">
+                    <img src="{% static 'IMG/R.jpg' %}" alt="">
+                </div>
+                <div class="informacion-perro">
+                    <img src="{% static 'IMG/R.jpg' %}" alt="">
+                </div>
+                <div class="informacion-perro">
+                    <img src="{% static 'IMG/R.jpg' %}" alt="">
+                </div>
+
+            </div>
+        </section>
+        <h3>vista con bostrap 5</h3>
+       <div class="container text-center">
+  
+  <div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+        {{% for item in lista_nombre %}
+        
+         {{item.name}}
+                
+        {% endfor %}}
+    </div>
+  </div>
+</div>
+</div>
+    </main>
+    
+    <footer>
+        <div class="contenedor">
+            <p>Sitio Radio Meraya</p>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+</body>
+
+</html>

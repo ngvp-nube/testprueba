@@ -1,0 +1,15 @@
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+}
+
+#banner .contenedor {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: rgb(243, 224, 217);
+}

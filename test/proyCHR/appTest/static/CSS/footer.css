@@ -1,0 +1,9 @@
+footer .contenedor {
+    text-align: center;
+    font-size: 10px;
+    background-color: rgb(184, 183, 183);
+    padding: 30px;
+    border-top: tomato solid 1px;
+    border-bottom: tomato solid 1px;
+    ;
+}

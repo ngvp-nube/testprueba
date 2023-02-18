@@ -1,0 +1,23 @@
+#info {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.informacion-perro {
+    margin: 30px;
+}
+
+.informacion-perro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    border: solid 5px tomato;
+}
